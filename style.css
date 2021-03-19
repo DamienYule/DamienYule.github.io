@@ -311,15 +311,18 @@ section {
 /* ----------------------------------animate card------------------ */
 .scene {
   perspective: 600px;
+  -moz-perspective: 600px;
+  
 }
 .card {
   transform-style: preserve-3d;
   transform-origin: center right;
-  transition: transform 1s;
+  transition: all 1s ease;
 }
 .card__face {
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.606);
   border-radius: 10px;
 }
