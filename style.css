@@ -294,7 +294,13 @@ section {
   background-image: linear-gradient(#0a192f00, #0a192f);
   z-index: 1;
 }
-
+.about-left p {
+  font-size: 2vw;
+  color: #c3a6ff;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  font-family: monaco;
+}
 .bubble {
   position: absolute;
   font-family: sans-serif;
@@ -308,13 +314,13 @@ section {
   color: #000;
   z-index: 3;
   margin-left: 20vw;
-  top: -3vw;
+  top:  -1vw;
   visibility: hidden;
 }
 .punchline-button {
   position: absolute;
   left: 32.4vw;
-  top: 35.9vw;
+  top: 38.9vw;
   visibility: hidden;
   z-index: 4;
   width: 5vw;
@@ -323,7 +329,7 @@ section {
 .clear{
   position: absolute;
   left: 25.9vw;
-  top: 35.9vw;
+  top: 38.9vw;
   color: #ffae57;
   border: solid 2px  #ffae57;
   visibility: hidden;
@@ -349,12 +355,12 @@ section {
   position: absolute;
   z-index: 2;
   padding: 0.5vw;
-  margin-left: 1vw;
+  
 }
 .fortune-button {
   position: absolute;
   z-index: 2;
-  margin-left: 15vw;
+  margin-left: 18vw;
   padding: 0.5vw;
 }
 /* .speech-bubble{

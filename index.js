@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', () => {
     // console.log("scrolling")
   })
-
 // --------------------------------card flip-------------------------------------
   var card = document.querySelectorAll('.card');
   // console.log(card)
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('click', function () {
       el.classList.toggle('is-flipped');
     });
-
   })
   // -------------------------------card flip----------------------------------
   // ---------------------------------joke-------------------------------------
@@ -38,16 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
     div.innerHTML = ''
     getJoke()
   })
+  // ---------------------------Joke----------------------------
+  // --------------------------fortune--------------------------
+  const buttonFortune = document.querySelector(".fortune-button")
+  async function getFortune() {
+    let result = await axios.get("http://yerkee.com/api/fortune/wisdom")
+    console.log(result)
+  }
+  buttonFortune.addEventListener('click', (event) => {
+    div.innerHTML = ''
+    getFortune()
+  })
+  //http://yerkee.com/api/fortune/wisdom
 })
-// // Initial state
-// var scrollPos = 0;
-// // adding scroll event
-// window.addEventListener('scroll', function(){
-//   // detects new state and compares it with the new one
-//   if ((document.body.getBoundingClientRect()).top > scrollPos)
-// 		document.getElementById('info-box').setAttribute('data-scroll-direction', 'UP');
-// 	else
-// 		document.getElementById('info-box').setAttribute('data-scroll-direction', 'DOWN');
-// 	// saves the new position for iteration.
-// 	scrollPos = (document.body.getBoundingClientRect()).top;
-// });
+
+
