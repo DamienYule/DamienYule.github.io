@@ -18,8 +18,8 @@ h3 {
   font-size: 2vw;
   font-family: monaco;
 }
-h3:hover{
-  color:#5ccfe6 ;
+h3:hover {
+  color: #5ccfe6;
 }
 /* ------Top nav bar ------- */
 .logo p {
@@ -259,6 +259,7 @@ section {
 
 /* -----------------------------------About Section----------------- */
 .about {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -269,9 +270,9 @@ section {
 .profilePic {
   width: 46vw;
   position: absolute;
-  left: 0px;
+
   z-index: 0;
-  margin-left: 10px;
+  margin-left: -10vw;
 }
 .cover-box {
   grid-column: 1;
@@ -293,6 +294,69 @@ section {
   background-image: linear-gradient(#0a192f00, #0a192f);
   z-index: 1;
 }
+
+.bubble {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 2vw;
+  line-height: 24px;
+  width: 30vw;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  z-index: 3;
+  margin-left: 20vw;
+  top: -3vw;
+  visibility: hidden;
+}
+.punchline-button {
+  position: absolute;
+  left: 32.4vw;
+  top: 35.9vw;
+  visibility: hidden;
+  z-index: 4;
+  width: 5vw;
+  border-radius: 100px;
+}
+.clear{
+  position: absolute;
+  left: 25.9vw;
+  top: 35.9vw;
+  color: #ffae57;
+  border: solid 2px  #ffae57;
+  visibility: hidden;
+  z-index: 4;
+  width: 5vw;
+  border-radius: 100px;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+.joke-button {
+  position: absolute;
+  z-index: 2;
+  padding: 0.5vw;
+  margin-left: 1vw;
+}
+.fortune-button {
+  position: absolute;
+  z-index: 2;
+  margin-left: 15vw;
+  padding: 0.5vw;
+}
 /* .speech-bubble{
   position:absolute;
   z-index: 2;
@@ -312,7 +376,6 @@ section {
 .scene {
   perspective: 600px;
   -moz-perspective: 600px;
-  
 }
 .card {
   transform-style: preserve-3d;
@@ -322,7 +385,7 @@ section {
 .card__face {
   position: absolute;
   backface-visibility: hidden;
-  -webkit-backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.606);
   border-radius: 10px;
 }
@@ -584,21 +647,21 @@ section {
   margin-top: 2vw;
   margin-left: 28.5vw;
 }
-.projectOne-front-button{
- margin-top: 1.75vw;
+.projectOne-front-button {
+  margin-top: 1.75vw;
 }
 .projectOne-back-button {
   position: relative;
   margin-top: 15vw;
   margin-left: 34vw;
 }
-.github-pma-front{
+.github-pma-front {
   position: absolute;
   margin-left: 32.5vw;
   margin-top: 2.34vw;
   backface-visibility: hidden;
 }
-.pma-weblink-front{
+.pma-weblink-front {
   position: absolute;
   margin-left: 36vw;
   margin-top: 2vw;
@@ -609,7 +672,7 @@ section {
   margin-left: 6.5vw;
   margin-top: 16.12vw;
 }
-.pma-weblink{
+.pma-weblink {
   position: absolute;
   margin-left: 3vw;
   margin-top: 15.8vw;
