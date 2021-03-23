@@ -319,8 +319,8 @@ section {
 }
 .punchline-button {
   position: absolute;
-  left: 32.4vw;
-  top: 38.9vw;
+  left: 25.2vw;
+  top: 40.5vw;
   visibility: hidden;
   z-index: 4;
   width: 5vw;
@@ -328,8 +328,8 @@ section {
 }
 .clear{
   position: absolute;
-  left: 25.9vw;
-  top: 38.9vw;
+  left: 18.9vw;
+  top: 40.5vw;
   color: #ffae57;
   border: solid 2px  #ffae57;
   visibility: hidden;
@@ -357,12 +357,12 @@ section {
   padding: 0.5vw;
   
 }
-.fortune-button {
+/* .fortune-button {
   position: absolute;
   z-index: 2;
   margin-left: 18vw;
   padding: 0.5vw;
-}
+} */
 /* .speech-bubble{
   position:absolute;
   z-index: 2;
@@ -377,7 +377,27 @@ section {
   background-color: #1d2433;
   border-radius: 10px;
 }
-
+.skill-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.skill-list ul{
+  justify-items: center;
+  margin-top: -2vw;
+}
+.skill-list ul li{
+  margin-left: 1vw;
+  color: #8695b7;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.7vw;
+  font-family: monaco;
+  text-align: justify;
+}
+.skill-list ul h3{
+  margin-right: 4vw;
+}
 /* ----------------------------------animate card------------------ */
 .scene {
   perspective: 600px;
@@ -425,50 +445,53 @@ section {
   margin-left: 35%;
   margin-bottom: 5%;
   padding: 0.5vw;
+  z-index: 2;
 }
 
 /* ----------------------Skill Icon----------------------------- */
-.css-icon {
+.react-icon {
   position: absolute;
-  margin-top: 43.5%;
-  margin-left: 26%;
-  width: 3.2vw;
+  margin-top: 5%;
+  width: 6.2vw;
+  margin-left: 5%;
 }
 .js-icon {
   position: absolute;
-  margin-top: 43%;
-  margin-left: 5%;
-  width: 3.2vw;
-}
-.html-icon {
-  position: absolute;
-  margin-top: 44%;
-  margin-left: 15%;
-  width: 3.2vw;
-}
-.sass-icon {
-  position: absolute;
-  margin-top: 40%;
-  margin-left: 31%;
-  width: 4.2vw;
-}
-.react-icon {
-  position: absolute;
-  margin-top: 40%;
-  width: 3.2vw;
-}
-.sql-icon {
-  position: absolute;
-  width: 3.8vw;
-  margin-top: 40%;
-  margin-left: 20%;
+  margin-top: 23.4%;
+  margin-left: 19.5%;
+  width: 5.2vw;
 }
 .node-icon {
   position: absolute;
-  margin-top: 40%;
-  margin-left: 10%;
-  width: 3.2vw;
+  margin-top: 5%;
+  margin-left: 32%;
+  width: 5.4vw;
 }
+.html-icon {
+  position: absolute;
+  margin-top: 27%;
+  margin-left: 44.5%;
+  width: 5.3vw;
+}
+.sql-icon {
+  position: absolute;
+  width: 6.2vw;
+  margin-top: 5%;
+  margin-left: 56%;
+}
+.css-icon {
+  position: absolute;
+  margin-top: 24.3%;
+  margin-left: 70%;
+  width: 5.4vw;
+}
+.sass-icon {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 81%;
+  width: 6.2vw;
+}
+
 /* ---------------------------------About Phone------------------------ */
 @media screen and (max-width: 650px) {
   .about {

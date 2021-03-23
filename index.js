@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log("scrolling")
   })
 // --------------------------------card flip-------------------------------------
-  var card = document.querySelectorAll('.card');
+  const card = document.querySelectorAll('.card');
   // console.log(card)
+  const cardButton = document.querySelectorAll('.cardButton')
   card.forEach(el => {
     el.addEventListener('click', function () {
       el.classList.toggle('is-flipped');
@@ -38,15 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   // ---------------------------Joke----------------------------
   // --------------------------fortune--------------------------
-  const buttonFortune = document.querySelector(".fortune-button")
-  async function getFortune() {
-    let result = await axios.get("http://yerkee.com/api/fortune/wisdom")
-    console.log(result)
-  }
-  buttonFortune.addEventListener('click', (event) => {
-    div.innerHTML = ''
-    getFortune()
-  })
+  // const buttonFortune = document.querySelector(".fortune-button")
+  // async function getFortune() {
+  //   let result = await axios.get("https://api.ef.gy/fortune")
+  //   console.log(result.data)
+  //   const div = document.querySelector(".bubble")
+  //   const clear = document.querySelector(".clear")
+  //   div.innerHTML = `${result.data}`
+  //   div.style.visibility = "visible"
+  //   clear.style.visibility = "visible"
+  //   clear.addEventListener('click', (event) => {
+  //     div.style.visibility = "hidden"
+  //     clear.style.visibility = "hidden"
+  //   })
+  // }
+  // buttonFortune.addEventListener('click', (event) => {
+  //   div.innerHTML = ''
+  //   getFortune()
+  // })
   //http://yerkee.com/api/fortune/wisdom
 })
 
