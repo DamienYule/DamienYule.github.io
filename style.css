@@ -86,7 +86,8 @@ h3:hover {
   background-image: linear-gradient(#0a192f, #0a192f00);
   z-index: 0;
 }
-/**** Side Bar *****/
+/* -----------------------------------nav bar ----------------------------------- */
+/* ----------------------------------side bar---------------------------------- */
 .sidebar {
   list-style: none;
   padding-left: 3px;
@@ -97,6 +98,7 @@ h3:hover {
 .sidebar li {
   margin-bottom: 20px;
 }
+/* -----------------------------------------svg--------------------------------- */
 svg {
   width: 20px;
   height: 20px;
@@ -105,11 +107,13 @@ svg {
 svg:hover {
   color: #ffae57;
 }
+/* -----------------------------------------svg--------------------------------- */
 section {
   margin-left: 10%;
   margin-right: 5%;
   margin-top: 8%;
 }
+
 @media screen and (max-width: 650px) {
   h2 {
     font-size: 8vw;
@@ -128,6 +132,7 @@ section {
     margin-top: 4vw;
     margin-right: 4vw;
   }
+  /* -----------------------------------------svg--------------------------------- */
   svg {
     width: 20px;
     height: 20px;
@@ -136,14 +141,16 @@ section {
   svg:hover {
     color: #ffae57;
   }
+  /* -----------------------------------------svg--------------------------------- */
   section {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 8%;
   }
 }
+/* ----------------------------------------side bar----------------------------------------------------- */
+/* ---------------------------------------header hero--------------------------------------------------- */
 
-/****** header hero ******/
 .hero {
   display: flex;
   flex-direction: column;
@@ -256,8 +263,8 @@ section {
     border: 2px solid #ffae57;
   }
 }
-
-/* -----------------------------------About Section----------------- */
+/* --------------------------------------------------header hero------------------------------------------ */
+/* -------------------------------------------------About Section----------------------------------------- */
 .about {
   position: relative;
   display: grid;
@@ -303,7 +310,7 @@ section {
 }
 .bubble {
   position: absolute;
-  font-family: sans-serif;
+  font-family: monaco;
   font-size: 2vw;
   line-height: 24px;
   width: 30vw;
@@ -436,13 +443,13 @@ section {
   text-align: justify;
 }
 .about-button {
-  margin-left: 35%;
+  margin-left: 45.5%;
   margin-bottom: 5%;
   padding: 0.5vw;
 }
 .about-button-back {
   margin-top: 50%;
-  margin-left: 35%;
+  margin-left: 45.5%;
   margin-bottom: 5%;
   padding: 0.5vw;
   z-index: 2;
@@ -503,13 +510,42 @@ section {
     grid-column: 1;
     grid-row: 1;
     margin-left: 0px;
+    margin-bottom: 2vw;
   }
   .profilePic {
     width: 86vw;
     position: absolute;
-    left: 0px;
+    left: -18vw;
     z-index: 0;
     margin-left: 10px;
+  }
+  .bubble {
+    font-size: 4vw;
+    line-height: 24px;
+    width: 35vw;
+    padding: 24px;
+    margin-left: 45vw;
+    top:  3.5vw;
+  }
+  .about-left p {
+    font-size: 4vw;
+  }
+  .punchline-button {
+    left: 34.2vw;
+    top: 76.5vw;
+    width: 7vw;
+    padding: .5vw;
+    font-size: 4vw;
+  }
+  .clear{
+    left: 42.6vw;
+    top: 76.5vw;
+    width: 7vw;
+    padding: .5vw;
+    font-size: 4vw;
+  }
+  .joke-button {
+   font-size: 3.5vw;
   }
   .about-right {
     grid-column: 1;
@@ -526,60 +562,68 @@ section {
     height: 67.8vw;
     z-index: 1;
   }
-  .skill-icon {
-    display: none;
-  }
+ 
   h3 {
     font-size: 4.5vw;
   }
   .about-right p {
     font-size: 3.7vw;
   }
-  /* .css-icon {
-  position: absolute;
-  margin-top: 43.5%;
-  margin-left: 26%;
-  width: 3.2vw;
+  .react-icon {
+    position: absolute;
+    margin-top: 5%;
+    width: 9.2vw;
+    margin-left: 5%;
+  }
+  .js-icon {
+    position: absolute;
+    margin-top: 23.4%;
+    margin-left: 19.5%;
+    width: 8.2vw;
+  }
+  .node-icon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 32%;
+    width: 8.4vw;
+  }
+  .html-icon {
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 44.5%;
+    width: 8.3vw;
+  }
+  .sql-icon {
+    position: absolute;
+    width: 9.2vw;
+    margin-top: 5%;
+    margin-left: 56%;
+  }
+  .css-icon {
+    position: absolute;
+    margin-top: 24.3%;
+    margin-left: 70%;
+    width: 8.4vw;
+  }
+  .sass-icon {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 81%;
+    width: 9.2vw;
+  }
+  .skill-list ul li{
+    font-size: 3.7vw;
+  }
 }
-.js-icon {
-  position: absolute;
-  margin-top: 43%;
-  margin-left: 5%;
-  width: 3.2vw;
-}
-.html-icon {
-  position: absolute;
-  margin-top: 44%;
-  margin-left: 15%;
-  width: 3.2vw;
-}
-.sass-icon {
-  position: absolute;
-  margin-top: 40%;
-  margin-left: 31%;
-  width: 4.2vw;
-}
-.react-icon {
-  position: absolute;
-  margin-top: 40%;
-  width: 3.2vw;
-}
-.sql-icon {
-  position: absolute;
-  width: 3.8vw;
-  margin-top: 40%;
-  margin-left: 20%;
-}
-.node-icon {
-  position: absolute;
-  margin-top: 40%;
-  margin-left: 10%;
-  width: 3.2vw;
-} */
-}
-/* ---------------------------projects---------------------- */
+/* -------------------------------------------------About Section---------------------------------------- */
+/* ---------------------------------------------------Projects------------------------------------------- */
 .projects {
   margin-top: 25vw;
+}
+@media screen and (max-width: 650px) {
+  .projects {
+    margin-top: 60vw;
+  }
 }
 /* ------------------------------snowman----------------------- */
 .snowman {
@@ -640,7 +684,7 @@ section {
   margin-top: 0%;
   margin-left: 80%;
 }
-/* ------------------------------------Publish ME ASAP------------------------------ */
+/* -----------------------------------------Publish ME ASAP------------------------------ */
 .PMA {
   height: 50vh;
   margin-top: 11vw;
@@ -762,7 +806,8 @@ section {
   margin-left: 1.5vw;
   background-color: #0a192fca;
 }
-/* ------------------------contact section---------------------- */
+/* ----------------------------------------Projects--------------------------------------------------- */
+/* ----------------------------------Contact Section-------------------------------------------------- */
 .contact-section {
   display: grid;
   grid-template-rows: 20vw 1fr 20vw 15vw 10vw;
@@ -791,6 +836,7 @@ section {
     font-size: 3.7vw;
   }
 }
+/* ----------------------------------Contact Section--------------------------------- */
 /* Navy #0a192f
 Light Navy #112240
 Lightest Navy #233554
