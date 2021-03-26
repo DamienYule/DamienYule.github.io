@@ -441,7 +441,7 @@ section {
 }
 .punchline-button {
   position: absolute;
-  left: 25.2vw;
+  left:18.9vw; 
   top: 40.5vw;
   visibility: hidden;
   z-index: 4;
@@ -450,7 +450,7 @@ section {
 }
 .clear {
   position: absolute;
-  left: 18.9vw;
+  left: 25.2vw;
   top: 40.5vw;
   color: #ffae57;
   border: solid 2px #ffae57;
