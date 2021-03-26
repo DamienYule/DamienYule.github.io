@@ -34,7 +34,7 @@ h3:hover {
   width: 2.5vw;
 }
 .logo {
-  z-index: 1;
+  z-index: 5;
 }
 .nav-bar {
   display: grid;
@@ -61,30 +61,55 @@ h3:hover {
   position: fixed;
   left: 20px;
   top: 20px;
-  font-size: 2vw;
-  z-index: -1;
+  font-size: 3vw;
+  z-index: 3;
   color: #c3a6ff;
+  background-color: #0a192f;
+  border: #0a192f 0px solid;
+  cursor: pointer;
+}
+.scroll-nav-list {
+  visibility: hidden;
+  position: fixed;
+  left: .5vw;
+  z-index: 6;
+  color:#c3a6ff;
+  transform:translateX(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  font-family: monaco;
+  font-size: 4.5vw;
+  background-color: #0a192f74;
+  width: 50%;
+  height: 100vw;
+  top: -8vw;
+}
+.scroll-nav-list li{
+  padding-top: 15vw;
+}
+.showNav {
+  transform: translateX(0);
 }
 .cover-scroll-btn {
   position: absolute;
   left: 20px;
-  top: 2.5vw;
-  width: 3vw;
-  height: 10vw;
+  top: 0vw;
+  width: 4vw;
+  height: 12.5vw;
   /* border: solid 2px white; */
   background-color: #0a192f;
-  z-index: 0;
+  z-index: 4;
 }
 .cover-scroll-btn-two {
   position: absolute;
   left: 20px;
   top: 12.3vw;
-  width: 3vw;
+  width: 4vw;
   height: 10vw;
   /* border: solid 2px white; */
   background-color: #0a192f00;
   background-image: linear-gradient(#0a192f, #0a192f00);
-  z-index: 0;
+  z-index: 4;
 }
 /* -----------------------------------nav bar ----------------------------------- */
 /* ----------------------------------side bar---------------------------------- */
@@ -321,7 +346,7 @@ section {
   color: #000;
   z-index: 3;
   margin-left: 20vw;
-  top:  -1vw;
+  top: -1vw;
   visibility: hidden;
 }
 .punchline-button {
@@ -333,12 +358,12 @@ section {
   width: 5vw;
   border-radius: 100px;
 }
-.clear{
+.clear {
   position: absolute;
   left: 18.9vw;
   top: 40.5vw;
   color: #ffae57;
-  border: solid 2px  #ffae57;
+  border: solid 2px #ffae57;
   visibility: hidden;
   z-index: 4;
   width: 5vw;
@@ -362,7 +387,6 @@ section {
   position: absolute;
   z-index: 2;
   padding: 0.5vw;
-  
 }
 /* .fortune-button {
   position: absolute;
@@ -384,16 +408,16 @@ section {
   background-color: #1d2433;
   border-radius: 10px;
 }
-.skill-list{
+.skill-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
-.skill-list ul{
+.skill-list ul {
   justify-items: center;
   margin-top: -2vw;
 }
-.skill-list ul li{
+.skill-list ul li {
   margin-left: 1vw;
   color: #8695b7;
   padding-left: 15px;
@@ -402,7 +426,7 @@ section {
   font-family: monaco;
   text-align: justify;
 }
-.skill-list ul h3{
+.skill-list ul h3 {
   margin-right: 4vw;
 }
 /* ----------------------------------animate card------------------ */
@@ -525,7 +549,7 @@ section {
     width: 35vw;
     padding: 24px;
     margin-left: 45vw;
-    top:  3.5vw;
+    top: 3.5vw;
   }
   .about-left p {
     font-size: 4vw;
@@ -534,18 +558,18 @@ section {
     left: 34.2vw;
     top: 76.5vw;
     width: 7vw;
-    padding: .5vw;
+    padding: 0.5vw;
     font-size: 4vw;
   }
-  .clear{
+  .clear {
     left: 42.6vw;
     top: 76.5vw;
     width: 7vw;
-    padding: .5vw;
+    padding: 0.5vw;
     font-size: 4vw;
   }
   .joke-button {
-   font-size: 3.5vw;
+    font-size: 3.5vw;
   }
   .about-right {
     grid-column: 1;
@@ -562,7 +586,7 @@ section {
     height: 67.8vw;
     z-index: 1;
   }
- 
+
   h3 {
     font-size: 4.5vw;
   }
@@ -611,7 +635,7 @@ section {
     margin-left: 81%;
     width: 9.2vw;
   }
-  .skill-list ul li{
+  .skill-list ul li {
     font-size: 3.7vw;
   }
 }

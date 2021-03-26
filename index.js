@@ -38,6 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
     getJoke()
   })
   // ---------------------------Joke----------------------------
+  // -----------------------nav------------------------
+  const navBtn = document.querySelector('.scroll-btn')
+  const scollList = document.querySelector('.scroll-nav-list')
+  navBtn.addEventListener('click', (event) => {
+    console.log("hello")
+     if(scollList.style.visibility === "visible"){
+      scollList.style.visibility = "hidden"
+       navBtn.style.zIndex = "3"
+     }else{
+      scollList.style.visibility = "visible"
+      navBtn.style.zIndex = "7"
+     }
+     if (scollList.classList.contains("showNav")) {
+      scollList.classList.remove("showNav");
+     } else {
+      scollList.classList.add("showNav");
+     }
+  })
+  // -----------------------nav------------------------
   // --------------------------fortune--------------------------
   // const buttonFortune = document.querySelector(".fortune-button")
   // async function getFortune() {
