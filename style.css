@@ -62,6 +62,7 @@ h3:hover {
 }
 .nav-list li:hover {
   color: #ffae57;
+  cursor: pointer;
 }
 .nav-list li {
   padding: 20px;
@@ -171,6 +172,10 @@ h3:hover {
 }
 .scroll-nav-list li {
   padding-top: 15vh;
+}
+.scroll-nav-list li:hover {
+  color: #ffae57;
+  cursor: pointer;
 }
 .showNav {
   transform: translateX(0);
