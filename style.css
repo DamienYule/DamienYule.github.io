@@ -39,6 +39,12 @@ h3:hover {
 .nav-bar {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
+}
+@media screen and (max-width: 650px){
+  .nav-bar {
+    display: none;
+  }
 }
 .nav-list {
   display: flex;
@@ -59,13 +65,13 @@ h3:hover {
 }
 .scroll-btn {
   position: fixed;
-  left: 20px;
+  left: 2vw;
   top: 20px;
   font-size: 3vw;
   z-index: 3;
   color: #c3a6ff;
-  background-color: #0a192f;
-  border: #0a192f 0px solid;
+  background-color: #0a192f00;
+  border: #0a192f00 0px solid;
   cursor: pointer;
 }
 .scroll-nav-list {
@@ -82,6 +88,13 @@ h3:hover {
   width: 100%;
   height: 100vw;
   top: -8vw;
+}
+@media screen and (max-width: 650px){
+  .scroll-btn{
+    font-size: 10vw;
+    left: 90vw;
+    top: 0vw;
+  }
 }
 .scroll-nav-list ul{
   list-style: none;
