@@ -27,15 +27,19 @@
                 </ul>
             </div>
         </div>
-        
-        <button class="menu scroll-btn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-            <svg  viewBox="0 0 100 100">
-              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+
+        <button class="menu scroll-btn"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
+            <svg viewBox="0 0 100 100">
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
             </svg>
-          </button>
-        <div class="scroll-nav-list" >
+        </button>
+        <div class="scroll-nav-list">
             <ul>
                 <li>About</li>
                 <li>Projects</li>
@@ -118,14 +122,14 @@
                         </ul>
                     </div>
                     <div>
-                    <img src="images/css.png" alt="css-icon" class="skill-icon css-icon">
-                    <img src="images/js.png" alt="" class="skill-icon js-icon">
-                    <img src="images/html.png" alt="html-icon" class="skill-icon html-icon">
-                    <img src="images/postgreSQL.png" alt="sass-icon" class="skill-icon sass-icon">
-                    <img src="images/react-js.png" alt="react-icon" class="skill-icon react-icon">
-                    <img src="images/redux.png" alt="sql-icon" class="skill-icon sql-icon">
-                    <img src="images/node-js.png" alt="node-icon" class="skill-icon node-icon">
-                </div>
+                        <img src="images/css.png" alt="css-icon" class="skill-icon css-icon">
+                        <img src="images/js.png" alt="" class="skill-icon js-icon">
+                        <img src="images/html.png" alt="html-icon" class="skill-icon html-icon">
+                        <img src="images/postgreSQL.png" alt="sass-icon" class="skill-icon sass-icon">
+                        <img src="images/react-js.png" alt="react-icon" class="skill-icon react-icon">
+                        <img src="images/redux.png" alt="sql-icon" class="skill-icon sql-icon">
+                        <img src="images/node-js.png" alt="node-icon" class="skill-icon node-icon">
+                    </div>
                     <button class="hero-button about-button-back cardButton">Flip</button>
                 </div>
             </div>
@@ -142,7 +146,12 @@
                         <p>Operating website for a publishing, translation, and transcription business
                         <p>Website allows for customers to contact, access PMA documents, and read overview of goods and
                             services</p>
-                        <a href="https://github.com/DamienYule/PMA-site" target="_blank" class="github-pma-front"><svg
+                            <p class="webHide pmaParagraph">Built with JavaScript, HTML, and CSS.
+                            </p>
+                        <img src="images/js.png" alt="" class="pma-skill-icon-js-icon webHide">
+                        <img src="images/html.png" alt="html-icon" class="pma-skill-icon-html-icon webHide">
+                        <img src="images/css.png" alt="css-icon" class="pma-skill-icon-css-icon webHide">
+                        <!-- <a href="https://github.com/DamienYule/PMA-site" target="_blank" class="github-pma-front"><svg
                                 role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path
                                     d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
@@ -159,18 +168,19 @@
                                     d="M5 5C3.89543 5 3 5.89543 3 7V15C3 16.1046 3.89543 17 5 17H13C14.1046 17 15 16.1046 15 15V12C15 11.4477 14.5523 11 14 11C13.4477 11 13 11.4477 13 12V15H5V7L8 7C8.55228 7 9 6.55228 9 6C9 5.44772 8.55228 5 8 5H5Z"
                                     fill="#4A5568" />
                             </svg>
-                        </a>
-                        <button class="hero-button projectOne-front-button">Flip</button>
+                        </a> -->
+                        <button class="hero-button projectOne-front-button">&lt;-</button>
 
 
                     </div>
                     <div class="card__face card__face--back">
                         <h3 class="h3-pma">Publish ME ASAP</h3>
-                        <p>Built with JavaScript, HTML, and CSS.
+                        <p class="phoneHide">Built with JavaScript, HTML, and CSS.
                         </p>
-                        <img src="images/js.png" alt="" class="pma-skill-icon-js-icon">
-                        <img src="images/html.png" alt="html-icon" class="pma-skill-icon-html-icon">
-                        <img src="images/css.png" alt="css-icon" class="pma-skill-icon-css-icon">
+                        <img src="images/PMA-pic.png" alt="pma-pic" class="pma-pic-back webHide">
+                        <img src="images/js.png" alt="" class="pma-skill-icon-js-icon phoneHide">
+                        <img src="images/html.png" alt="html-icon" class="pma-skill-icon-html-icon phoneHide">
+                        <img src="images/css.png" alt="css-icon" class="pma-skill-icon-css-icon phoneHide">
                         <a href="https://github.com/DamienYule/PMA-site" target="_blank" class="github-pma"><svg
                                 role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path
@@ -189,19 +199,19 @@
                                     fill="#4A5568" />
                             </svg>
                         </a>
-                        <button class="hero-button projectOne-back-button">Flip</button>
+                        <button class="hero-button projectOne-back-button">-&gt;</button>
 
                     </div>
                 </div>
 
             </div>
             <div>
-                <img src="images/PMA-pic.png" alt="pma-pic" class="pma-pic">
-                <div class="boxTop pictureFrame"></div>
-                <div class="boxRight pictureFrame"></div>
-                <div class="boxBottom pictureFrame"></div>
-                <div class="boxLeft pictureFrame"></div>
-                <div class="boxCover pictureFrame"></div>
+                <img src="images/PMA-pic.png" alt="pma-pic" class="pma-pic phoneHide">
+                <div class="boxTop pictureFrame phoneHide"></div>
+                <div class="boxRight pictureFrame phoneHide"></div>
+                <div class="boxBottom pictureFrame phoneHide"></div>
+                <div class="boxLeft pictureFrame phoneHide"></div>
+                <div class="boxCover pictureFrame phoneHide"></div>
             </div>
         </div>
         <div class="snowman">

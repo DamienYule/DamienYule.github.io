@@ -85,7 +85,10 @@ h3:hover {
   outline: none;
   border: none;
 }
-.scroll-btn:focus {outline:0;}
+
+.scroll-btn:focus {
+  outline: 0;
+}
 .scroll-btn svg {
   height: 3vw;
   width: 3vw;
@@ -103,7 +106,6 @@ h3:hover {
   cursor: pointer;
   display: flex;
   padding: 0;
-
 }
 .menu:active {
   outline: none;
@@ -115,6 +117,9 @@ h3:hover {
   stroke-width: 6;
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line:hover {
+  stroke: #ffae57;
 }
 .line1 {
   stroke-dasharray: 60 207;
@@ -154,10 +159,18 @@ h3:hover {
   transition: transform 0.2s;
   font-family: monaco;
   font-size: 4.5vh;
-  background-color: #0a192faa;
+  background-color: #0a192fd3;
   width: 100%;
-  height: 100vw;
+  height: 200vh;
   top: -8vw;
+}
+
+.scroll-nav-list ul {
+  list-style: none;
+  margin-top: 15vh;
+}
+.scroll-nav-list li {
+  padding-top: 15vh;
 }
 @media screen and (max-width: 650px) {
   .scroll-btn {
@@ -165,13 +178,12 @@ h3:hover {
     left: 90vw;
     top: 1vw;
   }
-}
-.scroll-nav-list ul {
-  list-style: none;
-  margin-top: 15vh;
-}
-.scroll-nav-list li {
-  padding-top: 15vh;
+  .scroll-nav-list {
+    font-size: 3.5vh;
+  }
+  .scroll-nav-list li {
+    padding-top: 5vh;
+  }
 }
 .scroll-nav-list li:hover {
   color: #ffae57;
@@ -248,14 +260,7 @@ section {
     margin-right: 4vw;
   }
   /* -----------------------------------------svg--------------------------------- */
-  svg {
-    width: 20px;
-    height: 20px;
-    color: #c3a6ff;
-  }
-  svg:hover {
-    color: #ffae57;
-  }
+
   /* -----------------------------------------svg--------------------------------- */
   section {
     margin-left: 5%;
@@ -441,7 +446,7 @@ section {
 }
 .punchline-button {
   position: absolute;
-  left:18.9vw; 
+  left: 18.9vw;
   top: 40.5vw;
   visibility: hidden;
   z-index: 4;
@@ -739,7 +744,7 @@ section {
     margin-top: 60vw;
   }
 }
-/* ------------------------------snowman----------------------- */
+/* ------------------------------------------------snowman-------------------------------------- */
 .snowman {
   height: 50vh;
   margin-top: 11vw;
@@ -798,6 +803,7 @@ section {
   margin-top: 0%;
   margin-left: 80%;
 }
+/* -------------------------------------------snow man---------------------------------- */
 /* -----------------------------------------Publish ME ASAP------------------------------ */
 .PMA {
   height: 50vh;
@@ -919,6 +925,118 @@ section {
   height: 29.5vw;
   margin-left: 1.5vw;
   background-color: #0a192fca;
+}
+.webHide {
+  display: none;
+}
+.phoneHide {
+  display: inherit;
+}
+@media screen and (max-width: 650px) {
+  .PMA {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 40vw;
+  }
+  .webHide {
+    display: inherit;
+  }
+  .phoneHide {
+    display: none;
+  }
+  .pma-pic-back {
+    width: 70vw;
+    margin: 7.5vw;
+    margin-bottom: 15vw;
+    border: #ffae57 1vw solid;
+  }
+  .left-pma p {
+    padding-left: 2.2vw;
+    padding-right: 2.2vw;
+    font-size: 3.7vw;
+  }
+  .pma-skill-icon-js-icon {
+    position: absolute;
+    width: 9vw;
+    margin-top: -3.5vw;
+    margin-left: 15vw;
+  }
+  .pma-skill-icon-html-icon {
+    position: absolute;
+    width: 9vw;
+    margin-top: -1vw;
+    margin-left: 40vw;
+    backface-visibility: hidden;
+  }
+  .pma-skill-icon-css-icon {
+    position: absolute;
+    width: 9vw;
+    margin-top: -2vw;
+    margin-left: 64.5vw;
+    backface-visibility: hidden;
+  }
+  .projectOne-front-button {
+    margin-top: 5.75vw;
+    padding: .3vw;
+    padding-top: 0vw;
+    border-left: solid #bae67e 2vw;
+    padding-left: 2vw;
+    margin-left: -2vw;
+    margin-bottom: 5vw;
+  }
+  .projectOne-back-button {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    padding: .3vw;
+    padding-top: 0vw;
+    padding-right: 2vw;
+    margin-top: -9vw;
+    margin-left: 80.5vw;
+    border-right: solid #bae67e 2vw;
+    width: inherit;
+  }
+  .github-pma {
+    margin-left: 5.5vw;
+    margin-top: -9vw;
+    backface-visibility: hidden;
+  }
+  .github-pma svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  .pma-weblink {
+    margin-left: 18vw;
+    margin-top: -10.3vw;
+    backface-visibility: hidden;
+  }
+  .pma-weblink svg {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  /* .github-pma {
+    position: absolute;
+    margin-left: 6.5vw;
+    margin-top: 16.12vw;
+  }
+  .pma-weblink {
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 15.8vw;
+  } */
+  .svg-link {
+    width: 25px;
+    height: 25px;
+  }
+  .pma-pic {
+    position: absolute;
+    margin-left: 1.6vw;
+    margin-top: 0.1vw;
+    height: 29.3vw;
+    width: 37.8vw;
+    z-index: 0;
+  }
 }
 /* ----------------------------------------Projects--------------------------------------------------- */
 /* ----------------------------------Contact Section-------------------------------------------------- */
