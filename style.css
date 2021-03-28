@@ -842,26 +842,26 @@ section {
 }
 .projectOne-front-button {
   margin-top: 1.5vw;
-    padding: .3vw;
-    padding-top: 0vw;
-    border-left: solid #bae67e 2vw;
-    padding-left: 2vw;
-    margin-left: -2vw;
+    padding: .1vw;
+    padding-top: -.1vw;
+    border-left: solid #bae67e 1vw;
+    padding-left: 1vw;
+    margin-left: -1vw;
     margin-bottom: 2.4vw;
-    width: 7vw;
+    width: 5vw;
 }
 .backMargin{
  margin-bottom: 21.5vw;
 }
 .projectOne-back-button {
   position: absolute;
-  padding: .3vw;
-  padding-top: 0vw;
-  padding-right: 2vw;
+  padding: .1vw;
+  padding-top: -.1vw;
+  padding-right: 1vw;
   margin-top: -5vw;
-  margin-left: 35vw;
-  border-right: solid #bae67e 2vw;
-  width: 7vw;
+  margin-left: 36.5vw;
+  border-right: solid #bae67e 1vw;
+  width: 5vw;
 }
 .github-pma-front {
   position: absolute;
