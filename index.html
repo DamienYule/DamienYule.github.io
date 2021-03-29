@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+<!--   
+    Why did you choose to rely on DOMContentLoaded in this script and defer the axios dependency?
+    After some googling, it appears this will work reliably in chrome (that is, index.js runs after axios is loaded)
+    but I'm curious how you wound up with this!
+-->
     <script src="index.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <title>Damien Yule</title>
@@ -27,7 +32,7 @@
                 </ul>
             </div>
         </div>
-
+<!-- Write your javascript in a javascript file!!!! None of these semi-colon separated mulitline onclick attributes! -->
         <button class="menu scroll-btn"
             onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
             aria-label="Main Menu">
@@ -54,6 +59,7 @@
 
     <section>
         <div class="hero">
+<!--       Why not use h1 - h6 tags here? Seems like it might simplify both your html and css a bit, and tells me more about what content lives in the tags!       -->
             <div class="hello-text">
                 <p>Hi, my name is</p>
             </div>
@@ -92,6 +98,7 @@
             <div class="about-right card">
                 <div class="card__face card__face--front">
                     <h3>About Me</h3>
+<!--          Cool! I'd love to hear more about your ml and data science interests sometime : )            -->
                     <p>My main interests are in machine learning and artificial intelligence, but I also have strong
                         interest in
                         data science.</p>
@@ -136,6 +143,9 @@
         </div>
     </section>
     <section class="projects">
+<!--     Instead of your projects section being laid out as 3 separate grids, your code might be simpler and more maintainable if
+         you used a single grid!
+-->
         <h2>Projects</h2>
 
         <div class="PMA">
@@ -292,6 +302,8 @@
         </div>
         <div><button class="hero-button say-hello">Say Hello</button></div>
         <div class="icon-para">
+<!--      Hmmm... what's up with this tag? I don't believe side-bar is part of the HTML spec!        -->
+<!--      I'm also curious: why did you choose to nest this inside section.contact-section?        -->
             <side-bar>
                 <ul class="sidebar">
                     <li><a href="https://github.com/DamienYule" target="_blank"><svg role="img" viewBox="0 0 24 24"
