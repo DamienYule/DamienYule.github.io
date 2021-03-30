@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', () => {
     // console.log("scrolling")
   })
-// --------------------------------card flip-------------------------------------
+  // --------------------------------card flip-------------------------------------
   const card = document.querySelectorAll('.card');
   // console.log(card)
   const cardButton = document.querySelectorAll('.cardButton')
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     punchButton.style.visibility = "visible"
     clear.style.visibility = "visible"
     punchButton.addEventListener('click', (event) => {
-      div.innerHTML = `${result.data[0].setup} <br> ${result.data[0].punchline}` 
+      div.innerHTML = `${result.data[0].setup} <br> ${result.data[0].punchline}`
     })
     clear.addEventListener('click', (event) => {
       div.style.visibility = "hidden"
@@ -38,25 +38,63 @@ document.addEventListener('DOMContentLoaded', () => {
     getJoke()
   })
   // ---------------------------Joke----------------------------
-  // -----------------------nav------------------------
+  // -----------------------hamburg nav------------------------
   const navBtn = document.querySelector('.scroll-btn')
   const scollList = document.querySelector('.scroll-nav-list')
   navBtn.addEventListener('click', (event) => {
     console.log("hello")
-     if(scollList.style.visibility === "visible"){
+    if (scollList.style.visibility === "visible") {
       scollList.style.visibility = "hidden"
-       navBtn.style.zIndex = "3"
-     }else{
+      navBtn.style.zIndex = "3"
+    } else {
       scollList.style.visibility = "visible"
       navBtn.style.zIndex = "7"
-     }
-     if (scollList.classList.contains("showNav")) {
+    }
+    if (scollList.classList.contains("showNav")) {
       scollList.classList.remove("showNav");
-     } else {
+    } else {
       scollList.classList.add("showNav");
-     }
+    }
   })
-  // -----------------------nav------------------------
+  // -----------------------hamburg nav------------------------
+  // ---------------------------nav butttons-------------------\
+  const aboutButton = document.querySelectorAll(".aboutButton")
+  const aboutTarget = document.querySelector(".about")
+  aboutButton.forEach(el => {
+    el.addEventListener('click', function () {
+      aboutTarget.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'nearest'
+      });
+      setTimeout(function(){
+        window.location.hash = '.about';
+      }, 1000);
+    });
+  })
+  const projectsButton = document.querySelectorAll(".projectsButton")
+  const projectsTarget = document.querySelector(".projects")
+  projectsButton.forEach(el => {
+    el.addEventListener('click', function () {
+      projectsTarget.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'nearest'
+      });
+    });
+  })
+  const contactButton = document.querySelectorAll(".contactButton")
+  const contactTarget = document.querySelector(".contact-section")
+  contactButton.forEach(el => {
+    el.addEventListener('click', function () {
+      contactTarget.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'nearest'
+      });
+    });
+  })
+  // ---------------------------nav butttons-------------------
   // --------------------------fortune--------------------------
   // const buttonFortune = document.querySelector(".fortune-button")
   // async function getFortune() {
