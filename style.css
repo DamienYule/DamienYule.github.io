@@ -1,4 +1,8 @@
 /* #bae67e */
+/* 
+Looks like you're using BEM notation for the css relating to the flippable cards but not elsewhere... 
+I'd recommend using it consistently throughout or nowhere! (Or, if that css comes from some specific source, maybe you could house it in a separate css file.)
+*/
 
 body {
   background-color: #0a192f;
@@ -40,9 +44,10 @@ h3:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+/*  Nice application of flexbox*/
 .nav-list {
   display: flex;
+/*  is align-content ever necessary? I think the navbar gets hidden before the screen is small enough for this to be relevant.  */
   align-content: space-around;
   justify-content: flex-end;
   color: #5ccfe6;
@@ -285,6 +290,7 @@ section {
   margin-top: 0px;
   font-family: monaco;
 }
+/* Choose kebab-case (my-name) or camelCase (myName) not both! */
 .my-Name p {
   font-size: 10vw;
   color: #ccd6f6;
@@ -503,6 +509,10 @@ section {
   background-color: #1d2433;
   border-radius: 10px;
 }
+/* 
+This is a fine use-case for grid, although flexbox might be even more appropriate for a 1-d layout.
+Could you have used grid to layout all the card content including the icons?
+*/
 .skill-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -575,6 +585,7 @@ section {
 }
 
 /* ----------------------Skill Icon----------------------------- */
+/* This might be content that is more easily laid out with grid! */
 .react-icon {
   position: absolute;
   margin-top: 5%;

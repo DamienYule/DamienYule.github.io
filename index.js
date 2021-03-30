@@ -1,3 +1,6 @@
+// Have you compared/contrast visibility to display: none?
+// For some of your use cases here I think display: none may be more appropriate.
+
 document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', () => {
     // console.log("scrolling")
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const punchButton = document.querySelector(".punchline-button")
     const clear = document.querySelector(".clear")
     let result = await axios.get("https://official-joke-api.appspot.com/jokes/programming/random")
+    // template literal isn't necessary! result.data[0].setup is a string!!
     div.innerHTML = `${result.data[0].setup}`
     div.style.visibility = "visible"
     punchButton.style.visibility = "visible"
@@ -33,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       clear.style.visibility = "hidden"
     })
   }
+  // Could you add the wiping the div's innerHTML to getJoke and just pass getJoke instead of creating a new callback here?
   button.addEventListener('click', (event) => {
     div.innerHTML = ''
     getJoke()
@@ -42,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navBtn = document.querySelector('.scroll-btn')
   const scollList = document.querySelector('.scroll-nav-list')
   navBtn.addEventListener('click', (event) => {
+    // remove the console log
     console.log("hello")
      if(scollList.style.visibility === "visible"){
       scollList.style.visibility = "hidden"
@@ -50,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       scollList.style.visibility = "visible"
       navBtn.style.zIndex = "7"
      }
+    // Use classList.toggle to shorten this
      if (scollList.classList.contains("showNav")) {
       scollList.classList.remove("showNav");
      } else {
