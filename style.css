@@ -736,7 +736,7 @@ section {
 /* -------------------------------------------------About Section---------------------------------------- */
 /* ---------------------------------------------------Projects------------------------------------------- */
 .projects {
-  margin-top: 25vw;
+  margin-top: 18vw;
 }
 @media screen and (max-width: 650px) {
   .projects {
@@ -746,7 +746,7 @@ section {
 /* ------------------------------------------------snowman-------------------------------------- */
 .snowman {
   height: 50vh;
-  margin-top: 11vw;
+  margin-top: 18vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -845,7 +845,7 @@ section {
 /* -----------------------------------------Publish ME ASAP------------------------------ */
 .PMA {
   height: 50vh;
-  margin-top: 11vw;
+  margin-top: 4vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -1101,6 +1101,7 @@ section {
 .contact-section {
   display: grid;
   grid-template-rows: 20vw 1fr 20vw 15vw 10vw;
+  margin-top: 20vw;
 }
 @media screen and (min-width: 650px) {
   .contact-section {
