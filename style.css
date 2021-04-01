@@ -909,6 +909,7 @@ section {
     margin: 7.5vw;
     margin-bottom: 15vw;
     border: #ffae57 1vw solid;
+    border-radius: 2vw;
   }
   .left-pma p {
     padding-left: 2.2vw;
