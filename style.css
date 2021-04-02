@@ -255,7 +255,7 @@ section {
     justify-content: center;
     position: relative;
     margin: 10vw;
-    margin-right: 15vw;
+    margin-right: 17.2vw;
   }
   .sidebar li {
     margin: 2vw;
@@ -1189,15 +1189,20 @@ section {
 /* ----------------------------------Contact Section-------------------------------------------------- */
 .contact-section {
   display: grid;
-  grid-template-rows: 20vw 1fr 20vw 15vw 10vw;
+  grid-template-rows: 20vw 45vw 10vw 15vw 10vw;
   margin-top: -10vw;
+  
+}
+.contact-section p {
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 @media screen and (min-width: 650px) {
   .contact-section {
-    grid-template-rows: 1fr 1fr 1fr 0px 1fr;
-    height: 60vw;
+    grid-template-rows: 10vw 15vw 10vw 0vw 5vw;
+   
   }
-
+ 
 }
 .contact-section div {
   justify-self: center;
@@ -1219,6 +1224,10 @@ section {
   }
   .contact-section{
     margin-top: 90vw;
+  }
+  .contact-section p {
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
 }
 /* ----------------------------------Contact Section--------------------------------- */
