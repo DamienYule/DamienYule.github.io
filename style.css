@@ -505,6 +505,7 @@ section {
   grid-column: 2;
   background-color: #1d2433;
   border-radius: 10px;
+  
 }
 .skill-list {
   display: grid;
@@ -526,6 +527,9 @@ section {
 }
 .skill-list ul h3 {
   margin-right: 4vw;
+}
+.aboutBiggerText{
+  font-size: 20vw;
 }
 /* ----------------------------------animate card------------------ */
 .scene {
@@ -560,7 +564,7 @@ section {
   color: #8695b7;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
   font-family: monaco;
   
 }
@@ -1243,3 +1247,6 @@ White #e6f1ff
 Green #64ffda  */
 
 /****** box shadowing *****/
+.aboutBiggerText{
+  font-size: 20px;
+}
