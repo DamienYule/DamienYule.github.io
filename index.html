@@ -23,7 +23,8 @@
                     <li class="aboutButton">About</li>
                     <li class="projectsButton">Projects</li>
                     <li class="contactButton">Contact</li>
-                    <li><a href="https://docs.google.com/document/d/1Ax5-7Sk0eW8zYSbU6f5UTzZZ7V7SP80p0nOoH0rxkJo/edit?usp=sharing" target="_blank"><button class="resume-button">Resume</button></li></a>
+                    <li><a href="https://docs.google.com/document/d/1Ax5-7Sk0eW8zYSbU6f5UTzZZ7V7SP80p0nOoH0rxkJo/edit?usp=sharing"
+                            target="_blank"><button class="resume-button">Resume</button></li></a>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,10 @@
                 <li class="aboutButton">About</li>
                 <li class="projectsButton">Projects</li>
                 <li class="contactButton">Contact</li>
-                 <a href="https://docs.google.com/document/d/1Ax5-7Sk0eW8zYSbU6f5UTzZZ7V7SP80p0nOoH0rxkJo/edit?usp=sharing" target="_blank" class="resumeDefault"><li>Resume</li></a>
+                <a href="https://docs.google.com/document/d/1Ax5-7Sk0eW8zYSbU6f5UTzZZ7V7SP80p0nOoH0rxkJo/edit?usp=sharing"
+                    target="_blank" class="resumeDefault">
+                    <li>Resume</li>
+                </a>
             </ul>
         </div>
         <div class="cover-scroll-btn"></div>
@@ -92,11 +96,17 @@
             <div class="about-right card">
                 <div class="card__face card__face--front">
                     <h3>About Me</h3>
-                     
+
                     <!-- <p>Even though I came from a broken family that created the conditions for me to drop out of high school at 16, I believe I have done some pretty extraordinary things. For 10 years I sang in an operatic chorus, I taught myself how to play the piano, I built houses in NH, 5 years ago I got my GED and went back to school for engineering and got a 4.0 in an Associate’s in Mathematics, started working in tech two and a half years ago as a telecom specialist, now I am in the  Pursuit fellowship program where I am learning to use PostgreSQL, React and NodeJs to build full stack web applications. </p> -->
- 
-<p>Out of all the skills I have developed over the years, the one I enjoy the most is programming.  Nothing besides programming has kept me working through the night till the sun comes up.  I believe the reason for this is because it encompasses everything I have done before.  Building web applications, like building houses, allows me to express myself in what I build. Coding gives me the chance to blur the lines between work and play mimicking the same emotion I get when I play the piano or sing opera. I love to occupy my mind in complex problems, especially if you can create something that has a tangible outcome.  </p>
-                    
+
+                    <p>Out of all the skills I have developed over the years, the one I enjoy the most is programming.
+                        Nothing besides programming has kept me working through the night till the sun comes up. I
+                        believe the reason for this is because it encompasses everything I have done before. Building
+                        web applications, like building houses, allows me to express myself in what I build. Coding
+                        gives me the chance to blur the lines between work and play mimicking the same emotion I get
+                        when I play the piano or sing opera. I love to occupy my mind in complex problems, especially if
+                        you can create something that has a tangible outcome. </p>
+
 
                     <button class="hero-button about-button cardButton">Flip</button>
                 </div>
@@ -105,16 +115,17 @@
                     <div class="skill-list">
                         <ul>
                             <h3>Front End</h3>
-                            <li>React</li>
-                            <li>NodeJs</li>
+                            <li>React/Redux</li>
                             <li>JavaScript</li>
                             <li>CSS/HTML5</li>
+                            <li>Bootstrap</li>
                         </ul>
                         <ul>
                             <h3>Back End</h3>
+                            <li>NodeJs</li>
+                            <li>Express</li>
                             <li>PostgreSQL</li>
                             <li>Git</li>
-                            <li>Redux</li>
                         </ul>
                     </div>
                     <div>
@@ -133,6 +144,60 @@
     </section>
     <section class="projects">
         <h2>Projects</h2>
+<!---------------------------------------Budget App---------------------------------------------------->
+        <!-- <div class="snowman">
+            <div class="left-snowman">
+                <img src="images/oneMoreTimeTwo.gif" alt="snowman-gif" class="snowman-gif phoneHide">
+                <div class="cover-snowman-box"></div>
+                <img src="images/meltingSnowman.png" alt="" class="cartoonSnowMan phoneHide">
+                <img src="images/Daco_4686861.png" alt="" class="ice-picture phoneHide">
+
+            </div>
+
+            <div class="scene scene--card">
+                <div class="right-snowman card">
+                    <div class="card__face card__face--front marginFrontCardSnowman">
+                        <h3 class="h3-snowman">Budget App</h3>
+                        <p>Keep track of your budget.</p>
+                        <p>Used React, Express for API, and ustilized Bootstrap.</p>
+                        <p class="marginSnowmanFront">Utilizing Node.JS with readline-sync functions such that a user
+                            can interact with the
+                            program.
+                        </p>
+                        <p class="webHide">Built with JavaScript and Node.JS.
+                        </p>
+                        
+                        
+                        <img src="images/react-js.png" alt="react-icon" class="js-icon-snowman webHide">
+                        <img src="images/node-js.png" alt="" class="node-icon-snowman webHide">
+                        <button class="hero-button snowmanFrontCardButton">-&gt;</button>
+
+
+                    </div>
+                    <div class="card__face card__face--back marginBackCardSnowman">
+                        <h3 class="h3-snowman webHide sManH3Margin">Snowman</h3>
+                        <h3 class="h3-snowman phoneHide">Snowman</h3>
+                        <p class="backSMParagraph phoneHide">Built with JavaScript and Node.JS.
+                        </p>
+                        <img src="images/meltingSnowman.png" alt="" class="cartoonSnowMan cartoonBackOfCard webHide">
+                        <img src="images/oneMoreTimeTwo.gif" alt="snowman-gif" class="snowman-gif backOfCard webHide">
+                        <img src="images/react-js.png" alt="" class="js-icon-snowman phoneHide">
+                        <img src="images/node-js.png" alt="" class="node-icon-snowman phoneHide">
+                        <img src="images/frozen.png" alt="" class="iceBack webHide">
+                        <button class="hero-button snowmanBackCardButtonPhone webHide">&lt-</button>
+                        <a href="https://github.com/DamienYule/FSW-CLI-Snowman" class="github-snowman"
+                            target="_blank"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+<!---------------------------------------------------PMA------------------------------------------------------>
         <div class="PMA">
             <div class="scene scene--card">
                 <div class="left-pma  card">
@@ -141,8 +206,8 @@
                         <p>Operating website for a publishing, translation, and transcription business
                         <p>Website allows for customers to contact, access PMA documents, and read overview of goods and
                             services</p>
-                            <p class="webHide pmaParagraph">Built with JavaScript, HTML, and CSS.
-                            </p>
+                        <p class="webHide pmaParagraph">Built with JavaScript, HTML, and CSS.
+                        </p>
                         <img src="images/js.png" alt="" class="pma-skill-icon-js-icon webHide">
                         <img src="images/html.png" alt="html-icon" class="pma-skill-icon-html-icon webHide">
                         <img src="images/css.png" alt="css-icon" class="pma-skill-icon-css-icon webHide">
@@ -209,6 +274,7 @@
                 <div class="boxCover pictureFrame phoneHide"></div>
             </div>
         </div>
+<!------------------------------------------------Snowman----------------------------------------------->
         <div class="snowman">
             <div class="left-snowman">
                 <img src="images/oneMoreTimeTwo.gif" alt="snowman-gif" class="snowman-gif phoneHide">
@@ -217,14 +283,15 @@
                 <img src="images/Daco_4686861.png" alt="" class="ice-picture phoneHide">
 
             </div>
-            
+
             <div class="scene scene--card">
                 <div class="right-snowman card">
                     <div class="card__face card__face--front marginFrontCardSnowman">
                         <h3 class="h3-snowman">Snowman</h3>
                         <p>Similar to hangman but with a melting snowman.</p>
                         <p>Used objects, functions, and logical operators to construct the game.</p>
-                        <p class="marginSnowmanFront">Utilizing Node.JS with readline-sync functions such that a user can interact with the
+                        <p class="marginSnowmanFront">Utilizing Node.JS with readline-sync functions such that a user
+                            can interact with the
                             program.
                         </p>
                         <p class="webHide">Built with JavaScript and Node.JS.
@@ -232,26 +299,27 @@
                         <img src="images/js.png" alt="" class="js-icon-snowman webHide">
                         <img src="images/node-js.png" alt="" class="node-icon-snowman webHide">
                         <button class="hero-button snowmanFrontCardButton">-&gt;</button>
-                        
-                        
+
+
                     </div>
                     <div class="card__face card__face--back marginBackCardSnowman">
                         <h3 class="h3-snowman webHide sManH3Margin">Snowman</h3>
                         <h3 class="h3-snowman phoneHide">Snowman</h3>
                         <p class="backSMParagraph phoneHide">Built with JavaScript and Node.JS.
-                        </p> 
+                        </p>
                         <img src="images/meltingSnowman.png" alt="" class="cartoonSnowMan cartoonBackOfCard webHide">
                         <img src="images/oneMoreTimeTwo.gif" alt="snowman-gif" class="snowman-gif backOfCard webHide">
                         <img src="images/js.png" alt="" class="js-icon-snowman phoneHide">
                         <img src="images/node-js.png" alt="" class="node-icon-snowman phoneHide">
                         <img src="images/frozen.png" alt="" class="iceBack webHide">
                         <button class="hero-button snowmanBackCardButtonPhone webHide">&lt-</button>
-                        <a href="https://github.com/DamienYule/FSW-CLI-Snowman" class="github-snowman" target="_blank"><svg role="img"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg></a>
+                        <a href="https://github.com/DamienYule/FSW-CLI-Snowman" class="github-snowman"
+                            target="_blank"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg></a>
                     </div>
                 </div>
 
@@ -293,7 +361,8 @@
             <h2>Get in Touch</h2>
         </div>
         <div class="last-words">
-            <p>If you have any questions, queries, or good jokes I would love to hear them. Feel free to contact me by email and I will be sure to get back to you as soon as possible.</p>
+            <p>If you have any requests, queries, or good jokes I would love to hear them. Feel free to send me an
+                email and I will be sure to get a response back to you as soon as possible.</p>
         </div>
         <div><a href="mailto:damienyule@gmail.com" class="hero-button say-hello">Say Hello</a></div>
         <!-- <div><button class="hero-button say-hello">Say Hello</button></div> -->
