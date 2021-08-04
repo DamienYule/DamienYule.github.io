@@ -171,7 +171,7 @@ h3:hover {
 .scroll-nav-list li {
   padding-top: 15vh;
 }
-.resumeDefault{
+.resumeDefault {
   text-decoration: none;
   color: #5ccfe6;
 }
@@ -454,7 +454,7 @@ section {
   visibility: hidden;
   z-index: 4;
   padding: 0.5vw;
-  border-radius: .5vw;
+  border-radius: 0.5vw;
 }
 .clear {
   position: absolute;
@@ -505,7 +505,6 @@ section {
   grid-column: 2;
   background-color: #1d2433;
   border-radius: 10px;
-  
 }
 .skill-list {
   display: grid;
@@ -528,13 +527,14 @@ section {
 .skill-list ul h3 {
   margin-right: 4vw;
 }
-.aboutBiggerText{
+.aboutBiggerText {
   font-size: 20vw;
 }
 /* ----------------------------------animate card------------------ */
 .scene {
   perspective: 600px;
   -moz-perspective: 600px;
+  z-index: 1;
 }
 .card {
   transform-style: preserve-3d;
@@ -566,7 +566,6 @@ section {
   padding-right: 15px;
   font-size: 1.6vw;
   font-family: monaco;
-  
 }
 .about-button {
   margin-left: 45.5%;
@@ -659,10 +658,8 @@ section {
   .punchline-button {
     left: 38vw;
     top: 77.1vw;
-    
-   
+
     font-size: 3.5vw;
-   
   }
   .clear {
     left: 64.6vw;
@@ -670,7 +667,6 @@ section {
     width: 7vw;
     padding: 0.5vw;
     font-size: 4vw;
-   
   }
   .joke-button {
     font-size: 3.5vw;
@@ -753,17 +749,307 @@ section {
     margin-top: 60vw;
   }
 }
+/* -----------------------------------------Nomadix------------------------------ */
+
+.nomadix_picture {
+  position: absolute;
+  left: 6.5vw;
+  width: 65vw;
+  height: 26vw;
+  z-index: 0;
+  margin-top: -3vw;
+  border-radius: 20px;
+}
+.NOMADIX {
+  margin-top: 6vw;
+  height: 20vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.right-nodemadix {
+  grid-column: 1;
+  background-color: #1d2433;
+}
+.left-pma p {
+  color: #8695b7;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.7vw;
+  font-family: monaco;
+}
+@media screen and (max-width: 650px) {
+  .NOMADIX {
+    margin-top: -79vw;
+    margin-bottom: 48vw;
+    height: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 90vw;
+    backface-visibility: hidden;
+  }
+  .marginFrontCardNomad {
+    width: 86vw;
+    height: 90vw;
+  }
+  .right-pma p {
+    padding-left: 2.2vw;
+    padding-right: 2.2vw;
+    font-size: 3.7vw;
+  }
+  .nomadix-pic-back {
+    width: 70vw;
+    margin: 7.5vw;
+    margin-top: 10vw;
+    margin-bottom: 20vw;
+    border: #ffae57 1vw solid;
+    border-radius: 2vw;
+    backface-visibility: hidden;
+  }
+  .nomadix-skill-react-icon-phone {
+    position: absolute;
+    padding-left: 15vw;
+    width: 9vw;
+    backface-visibility: hidden;
+  }
+  .nomadix-skill-psgres-icon-phone {
+    position: absolute;
+    padding-left: 40vw;
+    padding-top: 0.5vw;
+    width: 9vw;
+    backface-visibility: hidden;
+  }
+  .nomadix-skill-node-icon-phone {
+    position: absolute;
+    padding-left: 67vw;
+    width: 9vw;
+    backface-visibility: hidden;
+  }
+}
+/* -----------------------------------------Nomadix------------------------------ */
+
+/* -----------------------------------------Budget App------------------------------ */
+.budget {
+  height: 50vw;
+  margin-top: 20vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-budget {
+  grid-column: 1;
+}
+.snowman-gif {
+  position: absolute;
+  margin-top: 3.5%;
+  margin-left: 20%;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 1vw;
+}
+.budget_picture {
+  position: absolute;
+  left: 6.5vw;
+  width: 65vw;
+  height: 25vw;
+  z-index: 0;
+  margin-top: 5vw;
+  border-radius: 30px;
+}
+.transparentBudget {
+  position: absolute;
+  width: 80vw;
+  height: 30vw;
+  margin-top: 0vw;
+}
+.right-budget {
+  background-color: #1d2433;
+  grid-column: 2;
+
+  /* justify-self: center;
+  margin-top: 5%;
+  justify-items: center;
+} */
+}
+.right-budget p {
+  color: #8695b7;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1.7vw;
+  font-family: monaco;
+}
+
+.marginSnowmanFront {
+  margin-bottom: 3vw;
+}
+.snowmanFrontCardButton {
+  position: absolute;
+  margin-top: -4.5vw;
+  padding: 0.1vw;
+  padding-top: 0vw;
+  border-right: solid #bae67e 1vw;
+  padding-left: 1vw;
+  margin-left: 38vw;
+  margin-bottom: 2.4vw;
+  width: 5vw;
+  /* backface-visibility: hidden; */
+}
+.marginBackCardBudget {
+  width: 42vw;
+  height: 29vw;
+}
+.marginFrontCardBudget {
+  width: 42vw;
+  height: 29vw;
+}
+.react-icon-budget {
+  position: absolute;
+  margin-top: 3.5vw;
+  margin-left: 8vw;
+  width: 7.9vw;
+}
+.node-icon-budget {
+  position: absolute;
+  margin-top: 3vw;
+  margin-left: 25.5vw;
+  width: 7vw;
+}
+
+.github-budget-front {
+  position: absolute;
+  margin-left: 1.5vw;
+  margin-top: -0.34vw;
+  backface-visibility: hidden;
+}
+.budget-weblink-front {
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: -0.5vw;
+  backface-visibility: hidden;
+}
+.github-budget {
+  position: absolute;
+  margin-left: 37.2vw;
+  margin-top: 13.5vw;
+}
+.github-budget svg {
+  width: 2vw;
+  height: 2vw;
+}
+.budget-weblink {
+  position: absolute;
+  margin-left: 33.2vw;
+  margin-top: 13vw;
+  backface-visibility: hidden;
+}
+.budget-weblink svg {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+@media screen and (max-width: 650px) {
+  .budget {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 10vw;
+    margin-top: 0vw;
+    margin-bottom: 10vw;
+  }
+  .marginFrontCardBudget {
+    width: 86vw;
+    height: 80vw;
+  }
+  .marginBackCardBudget {
+    width: 86vw;
+    height: 76vw;
+  }
+  .right-budget p {
+    font-size: 3.7vw;
+  }
+  .github-budget {
+    margin-left: 67vw;
+    margin-top: 51.4vw;
+    backface-visibility: hidden;
+  }
+  .github-budget svg {
+    width: 5vw;
+    height: 5vw;
+  }
+  .budget-weblink {
+    margin-left: 75vw;
+    margin-top: 50.3vw;
+    backface-visibility: hidden;
+  }
+  .budget-weblink svg {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .backOfCard {
+    position: absolute;
+    z-index: 11;
+    margin-left: 43vw;
+    width: 35vw;
+    height: 30vw;
+  }
+  .budget-pic-phone {
+    position: absolute;
+    width: 75vw;
+    z-index: 10;
+    margin-top: 8vw;
+    margin-left: 4vw;
+    z-index: 0;
+    border: #ffae57 1vw solid;
+    border-radius: 2vw;
+  }
+  .sManH3Margin {
+    margin-left: 10w;
+  }
+  .snowmanFrontCardButton {
+    width: 8vw;
+    border-right: solid #bae67e 2vw;
+    margin-left: 80vw;
+    margin-top: 0vw;
+  }
+  .budgetBackCardButtonPhone {
+    position: absolute;
+    margin-top: 49.4vw;
+    padding: 0.1vw;
+    padding-top: 0vw;
+    border-left: solid #bae67e 2vw;
+    padding-left: 1vw;
+    margin-left: -2vw;
+    margin-bottom: 2.4vw;
+    width: 8vw;
+  }
+  .react-icon-budget {
+    position: absolute;
+    margin-top: 0vw;
+    margin-left: 8vw;
+    width: 11vw;
+    backface-visibility: hidden;
+  }
+  .node-icon-budget {
+    position: absolute;
+    margin-top: -0.5vw;
+    margin-left: 29.5vw;
+    width: 10vw;
+    backface-visibility: hidden;
+  }
+}
 /* -----------------------------------------Publish ME ASAP------------------------------ */
 .PMA {
+  margin-top: -10vw;
   height: 20vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .left-pma {
   grid-column: 1;
+}
+.right-pma {
+  grid-column: 2;
   background-color: #1d2433;
 }
-.left-pma p {
+.right-pma p {
   color: #8695b7;
   padding-left: 15px;
   padding-right: 15px;
@@ -840,13 +1126,13 @@ section {
   height: 25px;
 }
 .pma-pic {
-  grid-column: 2;
   position: absolute;
-  margin-left: 1.6vw;
-  margin-top: 0.1vw;
-  height: 29.3vw;
-  width: 37.8vw;
+  left: 6.5vw;
+  margin-top: -3vw;
+  height: 25vw;
+  width: 65vw;
   z-index: 0;
+  border-radius: 20px;
 }
 .pictureFrame {
   /* border: 2px solid white; */
@@ -903,6 +1189,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    margin-bottom: 80vw;
   }
   .webHide {
     display: inherit;
@@ -920,6 +1207,9 @@ section {
   .left-pma p {
     padding-left: 2.2vw;
     padding-right: 2.2vw;
+    font-size: 3.7vw;
+  }
+  .right-pma p {
     font-size: 3.7vw;
   }
   .pma-skill-icon-js-icon {
@@ -1056,7 +1346,7 @@ section {
 .right-snowman {
   background-color: #1d2433;
   grid-column: 2;
-  
+
   /* justify-self: center;
   margin-top: 5%;
   justify-items: center;
@@ -1069,14 +1359,14 @@ section {
   font-size: 1.7vw;
   font-family: monaco;
 }
-.backSMParagraph{
+.backSMParagraph {
   margin-left: 2.3vw;
 }
-.marginSnowmanFront{
+.marginSnowmanFront {
   margin-bottom: 3vw;
 }
 .snowmanFrontCardButton {
-  position:absolute;
+  position: absolute;
   margin-top: -4.5vw;
   padding: 0.1vw;
   padding-top: 0vw;
@@ -1116,19 +1406,18 @@ section {
     height: 10vw;
     margin-top: 0vw;
   }
-  .marginFrontCardSnowman{
+  .marginFrontCardSnowman {
     width: 86vw;
     height: 80vw;
   }
-  .marginBackCardSnowman{
+  .marginBackCardSnowman {
     width: 86vw;
     height: 80vw;
-    
   }
   .right-snowman p {
     font-size: 3.7vw;
   }
-  .iceBack{
+  .iceBack {
     position: absolute;
     width: 60vw;
     height: 80vw;
@@ -1136,38 +1425,37 @@ section {
     margin-top: -15vw;
     margin-left: 26vw;
   }
-  .backOfCard{
+  .backOfCard {
     position: absolute;
     z-index: 11;
     margin-left: 43vw;
     width: 35vw;
     height: 30vw;
-    
   }
-  .cartoonBackOfCard{
+  .cartoonBackOfCard {
     position: absolute;
     width: 40vw;
     margin-top: 30vw;
     margin-left: 10vw;
   }
-  .sManH3Margin{
+  .sManH3Margin {
     margin-left: -20vw;
   }
-  .github-snowman{
+  .github-snowman {
     margin-left: 9vw;
   }
-  .github-snowman svg{
+  .github-snowman svg {
     width: 6.5vw;
     height: 6.5vw;
   }
-  .snowmanFrontCardButton{
+  .snowmanFrontCardButton {
     width: 8vw;
     border-right: solid #bae67e 2vw;
     margin-left: 80vw;
     margin-top: 0vw;
   }
-  .snowmanBackCardButtonPhone{
-    position:absolute;
+  .snowmanBackCardButtonPhone {
+    position: absolute;
     margin-top: 54.4vw;
     padding: 0.1vw;
     padding-top: 0vw;
@@ -1197,7 +1485,6 @@ section {
   display: grid;
   grid-template-rows: 20vw 45vw 10vw 15vw 10vw;
   margin-top: -10vw;
-  
 }
 .contact-section p {
   margin-left: 10vw;
@@ -1206,9 +1493,7 @@ section {
 @media screen and (min-width: 650px) {
   .contact-section {
     grid-template-rows: 10vw 15vw 10vw 0vw 5vw;
-   
   }
- 
 }
 .contact-section div {
   justify-self: center;
@@ -1228,7 +1513,7 @@ section {
   .last-words {
     font-size: 3.7vw;
   }
-  .contact-section{
+  .contact-section {
     margin-top: 90vw;
   }
   .contact-section p {
@@ -1247,6 +1532,6 @@ White #e6f1ff
 Green #64ffda  */
 
 /****** box shadowing *****/
-.aboutBiggerText{
+.aboutBiggerText {
   font-size: 20px;
 }
