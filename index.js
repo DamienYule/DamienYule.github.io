@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const div = document.querySelector(".bubble")
     const punchButton = document.querySelector(".punchline-button")
     const clear = document.querySelector(".clear")
-    let result = await axios.get("https://official-joke-api.appspot.com/jokes/programming/random")
-    div.innerHTML = `${result.data[0].setup}`
+    let result = await axios.get("https://v2.jokeapi.dev/joke/Programming?type=twopart")
+    div.innerHTML = `${result.data.setup}`
     div.style.visibility = "visible"
     punchButton.style.visibility = "visible"
     clear.style.visibility = "visible"
     punchButton.addEventListener('click', (event) => {
-      div.innerHTML = `${result.data[0].setup} <br> ${result.data[0].punchline}`
+      div.innerHTML = `${result.data.setup} <br> ${result.data.delivery}`
     })
     clear.addEventListener('click', (event) => {
       div.style.visibility = "hidden"
