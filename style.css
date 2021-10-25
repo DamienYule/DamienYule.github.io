@@ -779,7 +779,7 @@ section {
 }
 @media screen and (max-width: 650px) {
   .NOMADIX {
-    margin-top: -79vw;
+    margin-top: -1vh;
     margin-bottom: 48vw;
     height: 90vw;
     display: grid;
@@ -1484,12 +1484,36 @@ section {
   margin-bottom: 20px;
   margin-top: 6vw;
 }
+@media screen and (max-width: 650px) {
+  .tripApp{
+    margin-top: 1vh;
+    /* margin-bottom: ; */
+  }
+  .widthHightTripAppFront{
+    height: 40vh;
+  }
+  .tripApp-pic-phone{
+    margin-top: 3vh;
+  }
 
+}
 /* -------------------------------------------Trip App---------------------------------- */
 /* ----------------------------------Pma Job Tracker-------------------------------------------------- */
 
 .pmaTracker{
   margin-top: -15vw;
+}
+@media screen and (max-width: 650px) {
+  .pmaTracker{
+    margin-top:-9vh ;
+  }
+  /* .jobTrackerCardWnHFront{} */
+  .jobTrackerCardWnHBack{
+    height: 55vh;
+  }
+  .jobTrackerFlipButton{
+    margin-top: 2vh;
+  }
 }
 /* ----------------------------------Pma Job Tracker-------------------------------------------------- */
 /* ----------------------------------Hackethon Winner-------------------------------------------------- */
@@ -1498,6 +1522,23 @@ section {
 }
 .hackPicBorder{
   border: 10px solid black;
+}
+@media screen and (max-width: 650px) {
+  .hackathon{
+    margin-top: 55vh;
+  }
+  .hackathonCardHeightFront{
+    height: 50vh;
+  }
+  .hackathonCardHeightBack{
+    height: 50vh;
+  }
+  .hackathonBackButton{
+    margin-top: 32vh;
+  }
+  .hackathonGithub{
+    margin-top: 32vh;
+  }
 }
 /* ----------------------------------Hackethon Winner-------------------------------------------------- */
 
