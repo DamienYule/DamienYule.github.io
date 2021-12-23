@@ -20,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const punchButton = document.querySelector(".punchline-button")
     const clear = document.querySelector(".clear")
     let result = await axios.get("https://v2.jokeapi.dev/joke/Programming?type=twopart")
+    if(result.data.setup.includes("Genders")){
+      console.log( "To much politics in this joke!")
+      getJoke()
+    }
+    //Genders are a lot like booleans.
+//There's only two of them.
     div.innerHTML = `${result.data.setup}`
     div.style.visibility = "visible"
     punchButton.style.visibility = "visible"
