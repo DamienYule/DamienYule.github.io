@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log( "To much politics in this joke!")
       getJoke()
     }
-    //Genders are a lot like booleans.
-//There's only two of them.
     div.innerHTML = `${result.data.setup}`
     div.style.visibility = "visible"
     punchButton.style.visibility = "visible"
